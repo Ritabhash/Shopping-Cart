@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>Tee Hees:Official</title>
+    <meta name="viewport" content="width=device-width" />	
+	<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body background="images/background2.jpg">
+<h1 align="center" style="font-size:50px; color:gold; margin-top:50px;">Tee Hees</h1>
+<nav id="menu-wrap">    
+	<ul id="menu">
+		<li><a href="#">Home</a></li>
+		<li><a href="quality.html">Quality</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="login.php">Login</a></li>
+		<li><a href="register.php">Register</a></li>
+	</ul>
+</nav>
+<!-- Slide Show -->
+<section style="margin-left:500px;">
+  <img class="mySlides" src="images/ironman.jpg"
+  style="width:300px; height:300px;">
+  <img class="mySlides" src="images/captain.jpg"
+  style="width:300px; height:300px;">
+  <img class="mySlides" src="images/spiderman.jpg"
+  style="width:300px; height:300px;">
+<img class="mySlides" src="images/aquaman.jpg"
+  style="width:300px; height:300px;">
+<img class="mySlides" src="images/antman.jpg"
+  style="width:300px; height:300px;">
+<img class="mySlides" src="images/batman.jpg"
+  style="width:300px; height:300px;">
+<img class="mySlides" src="images/blackwidow.jpg"
+  style="width:300px; height:300px;">
+<img class="mySlides" src="images/ironman.jpg"
+  style="width:300px; height:300px;">
+<img class="mySlides" src="images/flash.jpg"
+  style="width:300px; height:300px;">
+<img class="mySlides" src="images/greenlantern.jpg"
+  style="width:300px; height:300px;">
+<img class="mySlides" src="images/hulk.jpg"
+  style="width:300px; height:300px;">
+<img class="mySlides" src="images/superman.jpg"
+  style="width:300px; height:300px;">
+<img class="mySlides" src="images/thor.jpg"
+  style="width:300px; height:300px;">
+<img class="mySlides" src="images/wonderwoman.jpg"
+  style="width:300px; height:300px;">
+<img class="mySlides" src="images/wolverine.jpg"
+  style="width:300px; height:300px;">
+</section>
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 1000);
+}
+</script>
+</body>
+</html>
