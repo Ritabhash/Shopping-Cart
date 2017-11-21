@@ -169,7 +169,7 @@ if (isset($_POST['signup'])) {
                 ?>
       </form>
     </div>
-
+<button><a href="a.html">HOME</a></button>
 
 </body>
 
